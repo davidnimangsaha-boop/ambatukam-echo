@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoSort — Platform edukasi pengelolaan sampah modern. Kenali Organik, Anorganik, dan B3 untuk masa depan Bumi." />
+  <meta name="keywords" content="sampah organik, anorganik, B3, daur ulang, edukasi lingkungan, pengelolaan sampah" />
+  <title>EcoSort | Pilah Sampah, Selamatkan Bumi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#beranda" class="nav-logo" aria-label="EcoSort Home">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">EcoSort</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#beranda"   class="nav-link active" role="menuitem">Beranda</a></li>
+        <li role="none"><a href="#edukasi"   class="nav-link" role="menuitem">Edukasi</a></li>
+        <li role="none"><a href="#dampak"    class="nav-link" role="menuitem">Dampak</a></li>
+        <li role="none"><a href="#game"      class="nav-link" role="menuitem">Game</a></li>
+        <li role="none"><a href="#statistik" class="nav-link" role="menuitem">Statistik</a></li>
+        <li role="none"><a href="#tentang"   class="nav-link" role="menuitem">Tentang</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Ganti tema">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <!-- 📌 PETUNJUK: Ganti URL gambar di bawah ini dengan path gambar kamu! -->
+  <section class="hero" id="beranda" aria-label="Hero section" style="background-image: url('file:///C:/Users/RPL-13/Downloads/8beoybq0j8pdetm.avif'); background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <i class="fa-solid fa-recycle"></i>
+        <span>Platform Edukasi Lingkungan #1</span>
+      </div>
+      <h1 class="hero-title">
+        Kelola Sampah,<br/>
+        <span class="gradient-text">Kelola Masa Depan</span>
+      </h1>
+      <p class="hero-sub">
+        Kenali <strong>Organik</strong>, <strong>Anorganik</strong>, &amp; <strong>B3</strong> — 
+        karena setiap pilahan yang benar adalah langkah nyata untuk masa depan Bumi yang lebih hijau.
+      </p>
+      <div class="hero-cta">
+        <a href="#game" class="btn btn-primary btn-ripple" id="heroGameBtn">
+          <i class="fa-solid fa-gamepad"></i> Mulai Game
+        </a>
+        <a href="#edukasi" class="btn btn-outline btn-ripple">
+          <i class="fa-solid fa-book-open"></i> Pelajari Materi
+        </a>
+      </div>
+      <div class="hero-stats" aria-label="Quick stats">
+        <div class="hstat">
+          <span class="hstat-num" data-count="8">0</span><span>Juta</span>
+          <p>ton plastik/tahun ke laut</p>
+        </div>
+        <div class="hstat-divider" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="500">0</span><span>Tahun</span>
+          <p>waktu urai botol plastik</p>
+        </div>
+        <div class="hstat-divider" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="64">0</span><span>Juta Ton</span>
+          <p>sampah Indonesia/tahun</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image reveal reveal-delay-1" aria-hidden="true">
+      <div class="hero-illustration"></div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUKASI ===================== -->
+  <section class="section" id="edukasi" aria-label="Edukasi pengelolaan sampah">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">📚 Edukasi</span>
+        <h2 class="section-title">Kenali Jenis Sampahmu</h2>
+        <p class="section-sub">Memilah sampah dari sumbernya adalah cara paling efektif untuk mengurangi dampak lingkungan. Klik kartu untuk info lengkap.</p>
+      </div>
+
+      <div class="edu-cards">
+        <!-- ORGANIK -->
+        <article class="edu-card card-organik reveal" data-modal="modal-organik" role="button" tabindex="0">
+          <div class="card-glass">
+            <div class="card-badge-type">Mudah Terurai</div>
+            <div class="card-icon-wrap"><span class="card-icon-emoji">🍂</span></div>
+            <h3 class="card-title">Sampah Organik</h3>
+            <p class="card-desc">Limbah biodegradable yang berasal dari makhluk hidup dan dapat terurai secara alami oleh mikroorganisme.</p>
+            <div class="card-examples-grid">
+              <span class="ce-item">🍌 Kulit Pisang</span>
+              <span class="ce-item">🍂 Daun Kering</span>
+              <span class="ce-item">☕ Ampas Kopi</span>
+              <span class="ce-item">🥚 Cangkang Telur</span>
+              <span class="ce-item">🍚 Nasi Basi</span>
+              <span class="ce-item">🌿 Rumput</span>
+            </div>
+            <div class="card-meta">
+              <div class="meta-item"><i class="fa-solid fa-clock"></i><span>2 minggu – 2 bulan</span></div>
+              <div class="meta-item"><i class="fa-solid fa-recycle"></i><span>Kompos, Biogas, Maggot</span></div>
+            </div>
+            <button class="card-cta">Lihat Detail <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <!-- ANORGANIK -->
+        <article class="edu-card card-anorganik reveal reveal-delay-1" data-modal="modal-anorganik" role="button" tabindex="0">
+          <div class="card-glass">
+            <div class="card-badge-type">Sulit Terurai</div>
+            <div class="card-icon-wrap"><span class="card-icon-emoji">🥤</span></div>
+            <h3 class="card-title">Sampah Anorganik</h3>
+            <p class="card-desc">Limbah non-biodegradable dari bahan sintetis yang butuh ratusan hingga ribuan tahun untuk terurai di alam.</p>
+            <div class="card-examples-grid">
+              <span class="ce-item">🍶 Botol Plastik</span>
+              <span class="ce-item">🥫 Kaleng Soda</span>
+              <span class="ce-item">📦 Kardus</span>
+              <span class="ce-item">🛍️ Kantong Kresek</span>
+              <span class="ce-item">🧊 Styrofoam</span>
+              <span class="ce-item">🥛 Gelas Kaca</span>
+            </div>
+            <div class="card-meta">
+              <div class="meta-item"><i class="fa-solid fa-clock"></i><span>100 – 500+ tahun</span></div>
+              <div class="meta-item"><i class="fa-solid fa-arrows-rotate"></i><span>Reduce, Reuse, Recycle</span></div>
+            </div>
+            <button class="card-cta">Lihat Detail <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <!-- B3 -->
+        <article class="edu-card card-b3 reveal reveal-delay-2" data-modal="modal-b3" role="button" tabindex="0">
+          <div class="card-glass">
+            <div class="card-badge-type card-badge-danger">Sangat Berbahaya</div>
+            <div class="card-icon-wrap"><span class="card-icon-emoji">☣️</span></div>
+            <h3 class="card-title">Sampah B3</h3>
+            <p class="card-desc">Bahan Berbahaya &amp; Beracun yang mengandung zat toksik dan memerlukan penanganan khusus sesuai regulasi.</p>
+            <div class="card-examples-grid">
+              <span class="ce-item">🔋 Baterai Bekas</span>
+              <span class="ce-item">💡 Lampu Neon</span>
+              <span class="ce-item">🎨 Cat Bekas</span>
+              <span class="ce-item">🚗 Aki Mobil</span>
+              <span class="ce-item">💊 Obat Kadaluarsa</span>
+              <span class="ce-item">🧪 Pestisida</span>
+            </div>
+            <div class="card-meta">
+              <div class="meta-item"><i class="fa-solid fa-skull-crossbones"></i><span>Tidak terurai alami</span></div>
+              <div class="meta-item"><i class="fa-solid fa-shield-halved"></i><span>Penanganan khusus</span></div>
+            </div>
+            <button class="card-cta">Lihat Detail <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="table-wrap reveal">
+        <div class="table-header-row">
+          <h3><i class="fa-solid fa-table-list"></i> Tabel Perbandingan Lengkap</h3>
+          <div class="table-sort-btns">
+            <button class="sort-btn active" data-sort="type">Jenis</button>
+            <button class="sort-btn" data-sort="time">Waktu Urai</button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr><th>Jenis</th><th>Contoh</th><th>Waktu Urai</th><th>Metode</th><th>Dampak</th><th>Kode Warna</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="badge badge-organik">Organik</span></td><td>Sisa makanan, daun, kayu</td><td>2 minggu – 2 bulan</td><td>Kompos, biogas, maggot BSF</td><td>Gas metana, bau, vektor penyakit</td><td><span class="color-dot" style="background:#2E7D32"></span> Hijau</td></tr>
+              <tr><td><span class="badge badge-anorganik">Anorganik</span></td><td>Plastik, kaca, logam</td><td>100 – 500+ tahun</td><td>3R: Reduce, Reuse, Recycle</td><td>Mikroplastik, banjir, polusi tanah</td><td><span class="color-dot" style="background:#1565C0"></span> Biru</td></tr>
+              <tr><td><span class="badge badge-b3">B3</span></td><td>Baterai, aki, cat, pestisida</td><td>Tidak terurai / Sangat lama</td><td>Fasilitas pengolahan berizin</td><td>Kanker, kerusakan saraf, pencemaran air tanah</td><td><span class="color-dot" style="background:#C62828"></span> Merah</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DAMPAK ===================== -->
+  <section class="section section-alt" id="dampak" aria-label="Dampak lingkungan">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">🌊 Dampak</span>
+        <h2 class="section-title">Realita yang Harus Kita Hadapi</h2>
+        <p class="section-sub">Data dan fakta tentang dampak nyata pengelolaan sampah yang buruk terhadap lingkungan global.</p>
+      </div>
+
+      <div class="timeline-container reveal">
+        <div class="timeline-track" id="timelineTrack">
+          <div class="timeline-item tl-warning"><div class="tl-year">2024</div><div class="tl-icon">🗑️</div><div class="tl-content"><h4>2,01 Miliar Ton</h4><p>Sampah padat perkotaan dihasilkan global setiap tahun.</p></div></div>
+          <div class="timeline-item tl-danger"><div class="tl-year">2050</div><div class="tl-icon">🐟</div><div class="tl-content"><h4>Plastik &gt; Ikan</h4><p>Prediksi: plastik di lautan akan lebih banyak dari ikan secara berat.</p></div></div>
+          <div class="timeline-item tl-info"><div class="tl-year">Fakta</div><div class="tl-icon">🏥</div><div class="tl-content"><h4>B3 &amp; Kesehatan</h4><p>Limbah B3 yang tidak tertangani menyebabkan 12,6 juta kematian per tahun.</p></div></div>
+          <div class="timeline-item tl-neutral"><div class="tl-year">⏳ Urai</div><div class="tl-icon">📋</div><div class="tl-content"><h4>Timeline Dekomposisi</h4><ul class="tl-list"><li>🧻 Tisu: 2–4 minggu</li><li>🍌 Kulit pisang: 2–5 minggu</li><li>🍶 Botol plastik: 450–500 tahun</li><li>🥛 Gelas kaca: 1 juta tahun</li></ul></div></div>
+          <div class="timeline-item tl-danger"><div class="tl-year">Efek</div><div class="tl-icon">🌡️</div><div class="tl-content"><h4>Perubahan Iklim</h4><p>TPA menghasilkan 5% emisi gas rumah kaca global.</p></div></div>
+        </div>
+        <div class="timeline-nav"><button class="tl-nav-btn" id="tlPrev"><i class="fa-solid fa-chevron-left"></i></button><div class="tl-dots" id="tlDots"></div><button class="tl-nav-btn" id="tlNext"><i class="fa-solid fa-chevron-right"></i></button></div>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card reveal" style="--clr:#2E7D32"><div class="impact-icon">🌿</div><h4>Organik Salah Kelola</h4><ul><li>Gas metana (25× lebih kuat dari CO₂)</li><li>Air lindi mencemari tanah &amp; air</li><li>Sarang nyamuk &amp; tikus</li></ul></div>
+        <div class="impact-card reveal reveal-delay-1" style="--clr:#1565C0"><div class="impact-icon">🌊</div><h4>Anorganik Salah Kelola</h4><ul><li>Mikroplastik di rantai makanan</li><li>Banjir karena saluran tersumbat</li><li>Kematian satwa laut &amp; darat</li></ul></div>
+        <div class="impact-card reveal reveal-delay-2" style="--clr:#C62828"><div class="impact-icon">☠️</div><h4>B3 Salah Kelola</h4><ul><li>Kanker &amp; kerusakan sistem saraf</li><li>Pencemaran air tanah permanen</li><li>Risiko ledakan &amp; kebakaran</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIPS ===================== -->
+  <section class="section" id="tips" aria-label="Tips pengelolaan sampah">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">💡 Tips & Aksi</span>
+        <h2 class="section-title">Apa yang Bisa Kamu Lakukan?</h2>
+        <p class="section-sub">Mulai dari hal kecil di rumah. Setiap tindakan nyata adalah kontribusi besar untuk lingkungan.</p>
+      </div>
+      <div class="tips-masonry">
+        <div class="tips-card tips-reduce reveal"><div class="tips-icon-wrap"><i class="fa-solid fa-minimize"></i></div><h3>♻ Reduce</h3><p class="tips-tagline">Kurangi sebelum terlanjur jadi sampah</p><ul class="tips-list"><li><i class="fa-solid fa-check-circle"></i><div><strong>Gunakan Tumbler</strong><span>Hemat hingga 365 botol plastik per tahun</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Tas Belanja Kain</strong><span>Tolak kantong plastik sekali pakai</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Digitalisasi</strong><span>Kurangi cetak dokumen, go paperless</span></div></li></ul></div>
+        <div class="tips-card tips-reuse reveal reveal-delay-1"><div class="tips-icon-wrap"><i class="fa-solid fa-rotate"></i></div><h3>🔁 Reuse</h3><p class="tips-tagline">Gunakan kembali sebelum dibuang</p><ul class="tips-list"><li><i class="fa-solid fa-check-circle"></i><div><strong>Botol Kaca → Terrarium</strong><span>Hiasan meja yang estetik</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Ban Bekas → Pot Vertikal</strong><span>Taman dinding yang unik</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Pakaian Bekas → Donasi</strong><span>Perpanjang usia pakai</span></div></li></ul></div>
+        <div class="tips-card tips-recycle reveal reveal-delay-2"><div class="tips-icon-wrap"><i class="fa-solid fa-recycle"></i></div><h3>♻️ Recycle</h3><p class="tips-tagline">Daur ulang untuk siklus baru</p><ul class="tips-list"><li><i class="fa-solid fa-check-circle"></i><div><strong>Kenali Kode Plastik</strong><span>Simbol ▲1-7 menentukan jenis daur ulang</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Cari Bank Sampah Terdekat</strong><span>banksampahindonesia.com</span></div></li></ul><div class="plastic-codes"><span class="pc">▲1</span><span class="pc">▲2</span><span class="pc pc-danger">▲3</span><span class="pc">▲4</span><span class="pc pc-safe">▲5</span><span class="pc pc-danger">▲6</span><span class="pc">▲7</span></div></div>
+        <div class="tips-card tips-b3 reveal reveal-delay-1"><div class="tips-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div><h3>⚠️ Penanganan B3</h3><p class="tips-tagline">Sampah berbahaya butuh perlakuan khusus</p><ul class="tips-list"><li><i class="fa-solid fa-check-circle"></i><div><strong>Wadah Tertutup + Label B3</strong><span>Tandai wadah dengan jelas</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Jangan Dicampur</strong><span>B3 tidak boleh bersama sampah biasa</span></div></li><li><i class="fa-solid fa-check-circle"></i><div><strong>Cari Dropbox B3</strong><span>Mall, toko elektronik, & DLHK menyediakan</span></div></li></ul><div class="b3-symbols"><span class="b3-sym">🔥</span><span class="b3-sym">☠️</span><span class="b3-sym">⚗️</span><span class="b3-sym">☢️</span><span class="b3-sym">☣️</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GAME ===================== -->
+  <section class="section section-alt" id="game" aria-label="Game EcoPilot">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">🎮 Game</span>
+        <h2 class="section-title">EcoPilot: Pilah Sampah Challenge</h2>
+        <p class="section-sub">Uji kemampuanmu memilah sampah dalam empat mode tantangan!</p>
+      </div>
+      <div class="game-wrapper reveal">
+        <div class="game-mode-selector" id="gameModeSelector">
+          <button class="mode-btn active" data-mode="classic"><i class="fa-solid fa-clock"></i><span>Classic</span><small>60 detik</small></button>
+          <button class="mode-btn" data-mode="timeattack"><i class="fa-solid fa-bolt"></i><span>Time Attack</span><small>30 detik ×2</small></button>
+          <button class="mode-btn" data-mode="endless"><i class="fa-solid fa-infinity"></i><span>Endless</span><small>1 nyawa!</small></button>
+          <button class="mode-btn" data-mode="daily"><i class="fa-solid fa-calendar-star"></i><span>Daily</span><small>20 item</small></button>
+        </div>
+        <div class="game-arena" id="gameArena">
+          <div class="game-screen active" id="screenStart"><div class="game-start-inner"><div class="game-logo-emoji">♻️</div><h3 id="modeTitle">Classic Mode</h3><p id="modeDesc">Pilah sebanyak mungkin dalam 60 detik. Benar +10, Salah -5. 3 nyawa tersedia.</p><div class="hs-row"><div class="hs-item"><i class="fa-solid fa-trophy"></i><div><small>High Score</small><strong id="displayHS">0</strong></div></div></div><button class="btn btn-primary btn-ripple btn-lg" id="btnStartGame"><i class="fa-solid fa-play"></i> Mulai Game!</button></div></div>
+          <div class="game-screen" id="screenPlay"><div class="game-hud"><div class="hud-item hud-score"><i class="fa-solid fa-star"></i><div><small>Skor</small><strong id="hudScore">0</strong></div></div><div class="hud-item hud-time" id="hudTimeWrap"><i class="fa-solid fa-clock"></i><div><small>Waktu</small><strong id="hudTime">60</strong></div></div><div class="hud-item hud-combo" id="hudComboWrap"><i class="fa-solid fa-fire"></i><div><small>Combo</small><strong id="hudCombo">0×</strong></div></div><div class="hud-item hud-lives" id="hudLivesWrap"><span id="hudLives">❤️❤️❤️</span></div></div><div class="timer-bar-wrap" id="timerBarWrap"><div class="timer-bar" id="timerBar"></div></div><div class="trash-display-area"><p class="trash-instruction">Sampah berikutnya:</p><div class="trash-card" id="trashCard"><span class="trash-emoji" id="trashEmoji">🍌</span><span class="trash-name" id="trashName">Kulit Pisang</span></div><div class="progress-dots" id="progressDots"></div></div><div class="baskets-row"><button class="basket-btn basket-organik" data-type="organik"><span class="basket-icon">🌿</span><span class="basket-label">Organik</span></button><button class="basket-btn basket-anorganik" data-type="anorganik"><span class="basket-icon">♻️</span><span class="basket-label">Anorganik</span></button><button class="basket-btn basket-b3" data-type="b3"><span class="basket-icon">⚠️</span><span class="basket-label">B3</span></button></div><div class="game-feedback" id="gameFeedback"></div><div class="particles-container" id="particlesContainer"></div></div>
+          <div class="game-screen" id="screenResult"><div class="game-result-inner"><div class="result-trophy" id="resultTrophy">🏆</div><h3 id="resultTitle">Game Over!</h3><div class="result-score-box"><div class="rs-main"><span class="rs-label">Skor Akhir</span><span class="rs-number" id="resultScore">0</span></div><div class="rs-details"><div class="rs-detail-item"><i class="fa-solid fa-check"></i><span>Benar: <strong id="resultCorrect">0</strong></span></div><div class="rs-detail-item"><i class="fa-solid fa-times"></i><span>Salah: <strong id="resultWrong">0</strong></span></div><div class="rs-detail-item"><i class="fa-solid fa-bullseye"></i><span>Akurasi: <strong id="resultAccuracy">0%</strong></span></div></div></div><div class="result-badge-won" id="resultBadge"></div><div class="result-hs" id="resultHSWrap"></div><div class="result-actions"><button class="btn btn-primary btn-ripple" id="btnPlayAgain"><i class="fa-solid fa-rotate-right"></i> Main Lagi</button><button class="btn btn-outline btn-ripple" id="btnBackToMenu"><i class="fa-solid fa-house"></i> Menu</button></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATISTIK ===================== -->
+  <section class="section" id="statistik" aria-label="Statistik dan pencapaian">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">📊 Statistik</span>
+        <h2 class="section-title">Perjalanan Ecomu</h2>
+        <p class="section-sub">Pantau perkembanganmu dan raih semua pencapaian sebagai EcoWarrior sejati!</p>
+      </div>
+      <div class="stats-dashboard reveal">
+        <div class="stat-widget"><div class="sw-icon"><i class="fa-solid fa-star"></i></div><div class="sw-data"><span class="sw-num" id="statTotalScore">0</span><span class="sw-label">Total Skor Kumulatif</span></div></div>
+        <div class="stat-widget"><div class="sw-icon"><i class="fa-solid fa-gamepad"></i></div><div class="sw-data"><span class="sw-num" id="statGamesPlayed">0</span><span class="sw-label">Game Dimainkan</span></div></div>
+        <div class="stat-widget"><div class="sw-icon"><i class="fa-solid fa-bullseye"></i></div><div class="sw-data"><span class="sw-num" id="statAccuracy">0%</span><span class="sw-label">Akurasi Keseluruhan</span></div></div>
+        <div class="stat-widget"><div class="sw-icon"><i class="fa-solid fa-trophy"></i></div><div class="sw-data"><span class="sw-num" id="statBadges">0/6</span><span class="sw-label">Badge Diraih</span></div></div>
+      </div>
+      <div class="leaderboard-grid reveal">
+        <div class="lb-block"><h4><i class="fa-solid fa-trophy"></i> Leaderboard Classic</h4><ol class="lb-list" id="lbClassic"></ol></div>
+        <div class="lb-block"><h4><i class="fa-solid fa-bolt"></i> Leaderboard Time Attack</h4><ol class="lb-list" id="lbTimeAttack"></ol></div>
+        <div class="lb-block"><h4><i class="fa-solid fa-infinity"></i> Leaderboard Endless</h4><ol class="lb-list" id="lbEndless"></ol></div>
+      </div>
+      <div class="badges-section reveal"><h3 class="badges-title"><i class="fa-solid fa-medal"></i> Pencapaian (Badge)</h3><div class="badges-grid" id="badgesGrid"></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== TENTANG ===================== -->
+  <section class="section section-alt" id="tentang" aria-label="Tentang EcoSort">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">ℹ️ Tentang</span>
+        <h2 class="section-title">Tentang EcoSort</h2>
+      </div>
+      <div class="tentang-grid">
+        <div class="tentang-info reveal">
+          <div class="about-card glass-card">
+            <h3>🌿 Misi Kami</h3>
+            <p>EcoSort adalah platform edukasi non-profit yang bertujuan meningkatkan kesadaran dan kemampuan masyarakat Indonesia dalam mengelola sampah secara benar dan bertanggung jawab.</p>
+            <p>Setiap fitur dirancang berdasarkan data ilmiah dari Kementerian Lingkungan Hidup dan Kehutanan (KLHK), UNEP, dan IPCC.</p>
+            <div class="source-list"><h4>Sumber Data:</h4><ul><li><i class="fa-solid fa-link"></i> Kementerian LHK — SIPSN</li><li><i class="fa-solid fa-link"></i> UNEP — Global Waste Report 2024</li><li><i class="fa-solid fa-link"></i> IPCC — Climate Report</li><li><i class="fa-solid fa-link"></i> World Bank — What A Waste 3.0</li></ul></div>
+          </div>
+        </div>
+        <div class="tentang-form reveal reveal-delay-1">
+          <div class="glass-card">
+            <h3>💬 Kirim Saran</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-group"><label for="formName">Nama Lengkap</label><input type="text" id="formName" name="name" placeholder="John Doe" required /><span class="form-error" id="errName"></span></div>
+              <div class="form-group"><label for="formEmail">Email</label><input type="email" id="formEmail" name="email" placeholder="john@email.com" required /><span class="form-error" id="errEmail"></span></div>
+              <div class="form-group"><label for="formMessage">Pesan / Saran</label><textarea id="formMessage" name="message" rows="4" placeholder="Tulis pesan atau saranmu..." required></textarea><span class="form-error" id="errMessage"></span></div>
+              <button type="submit" class="btn btn-primary btn-ripple btn-block" id="btnSubmitForm"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</button>
+              <div class="form-success" id="formSuccess"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CREDITS SECTION ===================== -->
+  <section class="credits-section" aria-label="Credit and acknowledgment">
+    <div class="container">
+      <div class="credits-box reveal">
+        <div class="credits-divider"><span>✧</span><span>✧</span><span>✧</span></div>
+        <div class="credits-content">
+          <h3 class="credits-title">CREDITS</h3>
+          <div class="credits-block"><h4>Developers :</h4><p>• David Yehuda Surbakti</p><p>• Aril Steven Sitohang</p></div>
+          <div class="credits-block"><h4>Programming :</h4><p>• HTML</p><p>• CSS</p><p>• JavaScript</p></div>
+          <div class="credits-block"><h4>Image References :</h4><p>• Pinterest</p></div>
+          <div class="credits-block"><h4>Special Thanks :</h4><p>• Guru Pembimbing: Pak Maul</p><p>Open AI</p></div>
+          <div class="credits-copyright"><p>© 2026 David Yehuda Surbakti &amp; Aril Steven Sitohang.</p><p>All Rights Reserved.</p></div>
+        </div>
+        <div class="credits-divider"><span>✧</span><span>✧</span><span>✧</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-icon">🌿</span><span class="logo-text">EcoSort</span><p>Pilah Sampah, Selamatkan Bumi.</p></div>
+      <div class="footer-links"><a href="#beranda">Beranda</a><a href="#edukasi">Edukasi</a><a href="#dampak">Dampak</a><a href="#game">Game</a><a href="#statistik">Statistik</a></div>
+      <div class="footer-copy"><p>&copy; 2026 EcoSort. Dibuat dengan ♥ untuk Bumi Indonesia.</p><p>Open source &amp; non-profit.</p></div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="modal-organik"><div class="modal-box"><button class="modal-close"><i class="fa-solid fa-xmark"></i></button><div class="modal-header modal-header-organik"><span class="modal-emoji">🍂</span><div><h2>Sampah Organik</h2><p>Biodegradable • Terurai 2 minggu – 2 bulan</p></div></div><div class="modal-body"><div class="modal-section"><h4>📖 Definisi</h4><p>Sampah organik adalah limbah yang berasal dari makhluk hidup yang dapat terurai secara alami oleh mikroorganisme.</p></div></div></div></div>
+  <div class="modal-overlay" id="modal-anorganik"><div class="modal-box"><button class="modal-close"><i class="fa-solid fa-xmark"></i></button><div class="modal-header modal-header-anorganik"><span class="modal-emoji">🥤</span><div><h2>Sampah Anorganik</h2><p>Non-biodegradable • Terurai 100 – 500+ tahun</p></div></div><div class="modal-body"><div class="modal-section"><h4>📖 Definisi</h4><p>Sampah anorganik adalah limbah dari bahan sintetis yang tidak mudah diurai secara biologis.</p></div></div></div></div>
+  <div class="modal-overlay" id="modal-b3"><div class="modal-box"><button class="modal-close"><i class="fa-solid fa-xmark"></i></button><div class="modal-header modal-header-b3"><span class="modal-emoji">☣️</span><div><h2>Sampah B3</h2><p>Bahan Berbahaya & Beracun • Penanganan Khusus</p></div></div><div class="modal-body"><div class="modal-section"><h4>📖 Definisi</h4><p>Sampah B3 adalah limbah yang karena sifat/konsentrasinya dapat mencemari lingkungan dan membahayakan kesehatan manusia.</p></div></div></div></div>
+
+  <div id="confettiContainer"></div>
+  <div class="toast" id="toastNotif"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
